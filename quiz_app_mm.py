@@ -35,6 +35,7 @@ st.title("📱 문물권 OX")
 
 # 엑셀 불러오기
 df = pd.read_excel("mid_term.xlsx", header=None)
+df = df.iloc[1:].reset_index(drop=True)
 
 num_col = 0
 question_col = 1
